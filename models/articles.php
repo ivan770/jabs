@@ -30,19 +30,21 @@
         return $article;
     }
 
-    function articles_new($link, $title, $date, $content){
+    function articles_new($link, $title, $date, $content, $author){
         $title = trim($title);
         $content = trim($content);
+        $author = trim($author);
             
         if ($title == '')
             return false;
         
-        $template_add = "INSERT INTO articles (title, date, content) VALUES ('%s', '%s', '%s')";
+        $template_add = "INSERT INTO articles (title, date, content, author) VALUES ('%s', '%s', '%s', '%s')";
         
         $query = sprintf($template_add, 
                          mysqli_real_escape_string($link, $title),
                          mysqli_real_escape_string($link, $date),
-                         mysqli_real_escape_string($link, $content));
+                         mysqli_real_escape_string($link, $content),
+                         mysqli_real_escape_string($link, $author));
         
         echo $query;
         $result = mysqli_query($link, $query);
@@ -53,19 +55,21 @@
         return true;
     }
 
-    function articles_edit($link, $id, $title, $date, $content){
+    function articles_edit($link, $id, $title, $date, $content, $author){
         $title = trim($title);
         $content = trim($content);
         $date = trim($date);
+        $author = trim($author);
         $id = (int)$id;
             
         if ($title == '')
             return false;
         
-        $template_update = "UPDATE articles SET title='%s', content='%s', date='%s' WHERE id='%d'";
+        $template_update = "UPDATE articles SET title='%s', author='%s', content='%s', date='%s' WHERE id='%d'";
             
         $query = sprintf($template_update, 
                          mysqli_real_escape_string($link, $title),
+                         mysqli_real_escape_string($link, $author),
                          mysqli_real_escape_string($link, $content),
                          mysqli_real_escape_string($link, $date),
                          $id);

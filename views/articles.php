@@ -13,7 +13,7 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a id="blog" class="navbar-brand" href="index.php">JABS</a>
+                        <a id="blog" class="navbar-brand" href="index.php"><?php $path = "config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?></a>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="admin">Admin panel</a></li>
@@ -26,6 +26,7 @@
                 <h3><a href="article.php?id=<?=$article['id']?>"><?=$article['title']?></a></h3>
                 <em>Published: <?=$article['date']?></em>
                 <p><?=articles_intro($article['content'])?></p>
+                <em>Author: <?=$article['author']?></em>
             </div>
             <?php endforeach ?>
             <footer>

@@ -13,7 +13,7 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a id="blog" class="navbar-brand" href="../index.php">JABS</a>
+                        <a id="blog" class="navbar-brand" href="../index.php"><?php $path = "../config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?></a>
                     </div>
                 </div>
             </nav> 
@@ -31,6 +31,10 @@
                     <label>
                         Content
                         <textarea class="form-item" name="content" required><?=$article['content']?></textarea>
+                    </label>
+                    <label>
+                        Author
+                        <input type="text" name="author" value="<?=$article['author']?>" class="form-item" required>
                     </label>
                     <input type="submit" value="Save" class="btn">
                 </form>
