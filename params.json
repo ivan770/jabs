@@ -1,6 +1,6 @@
 {
   "name": "JABS",
   "tagline": "Light-weight customizable PHP blog",
-  "body": "# Want to try blogging or have a lot of fans, but want to try something new?\r\n\r\nTry JABS! JABS features are:\r\n\r\n1. Full HTML support in articles. Express your mind as you want.\r\n\r\n2. Admin panel, enabled only for owner.\r\n\r\n3. MySQL integration, so you can control your blog even without admin panel.\r\n\r\n4. Minimalistic design.\r\n\r\nUpdated to 1.1:\r\n\r\n1. Articles will contain author now. You can edit author while creating article.\r\n\r\n2. You can edit blog's name from config.php",
+  "body": "# Want to try blogging or have a lot of fans, but want to try something new?\r\n\r\nTry JABS! JABS features are:\r\n\r\n1. Full HTML support in articles. Express your mind as you want.\r\n\r\n2. Admin panel, enabled only for owner.\r\n\r\n3. MySQL integration, so you can control your blog even without admin panel.\r\n\r\n4. Minimalistic design.\r\n\r\nUpdated to 1.1.1:\r\n\r\n1. Fixed graphical bugs",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
