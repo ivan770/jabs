@@ -13,7 +13,7 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a id="blog" class="navbar-brand" href="../index.php"><?php $path = "../config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?></a>
+                        <a id="blog" class="navbar-brand" href="../index.php">&nbsp<?php $path = "../config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?></a>
                     </div>
                 </div>
             </nav> 
