@@ -1,0 +1,8 @@
+title: JABS
+description: Light-weight customizable PHP blog
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
