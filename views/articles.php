@@ -31,7 +31,7 @@
             <?php endforeach ?>
             <footer>
                 <p>
-                    JABS<br>Copyright &copy; 2016
+                    <?php $path = "config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?><br>Copyright &copy; 2017
                 </p>
             </footer>
         </div>

@@ -14,7 +14,7 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a id="blog" class="navbar-brand" href="index.php">&nbsp<?php $path = "../config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?></a>
+                        <a id="blog" class="navbar-brand" href="index.php">&nbsp<?php $path = "config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?></a>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="admin">Admin panel</a></li>
@@ -33,7 +33,7 @@
             <!-- Footer -->
             <footer>
                 <p>
-                    JABS<br>Copyright &copy; 2016
+                    <?php $path = "../config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?><br>Copyright &copy; 2017
                 </p>
             </footer>
             <!-- END Footer -->
