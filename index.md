@@ -10,6 +10,4 @@ Try JABS! JABS features are:
 
 4. Minimalistic design.
 
-Updated to 1.1.1:
-
-1. Fixed graphical bugs
+Updated to 1.2
