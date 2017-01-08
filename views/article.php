@@ -33,7 +33,7 @@
             <!-- Footer -->
             <footer>
                 <p>
-                    <?php $path = "../config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?><br>Copyright &copy; 2017
+                    <?php $path = "config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?><br>Copyright &copy; 2017
                 </p>
             </footer>
             <!-- END Footer -->
