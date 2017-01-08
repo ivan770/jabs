@@ -7,11 +7,7 @@ It's easy to use JABS! Installing:
 
 2. Change connection configuration in database.php to yours, and import blog.sql to your database
 
-3. Create .htaccess and .htpasswd files inside admin folder to protect admin panel.
-
-4. Insert hthelp.txt contents inside .htaccess
-
-5. Use http://www.web2generators.com/apache-tools/htpasswd-generator to generate a password for .htpasswd
+3. Change config.php to yours (admin password, blog name)
 
 Thanks for reading!
 
