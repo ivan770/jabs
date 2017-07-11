@@ -27,6 +27,9 @@
                     <input type="submit" value="Log in" class="btn">
                 </form>
             </div>
+            <div class="tooltip">Forgot password?
+                <span class="tooltiptext">You can only change password by using configuration file.</span>
+            </div>
             <footer>
                 <p>
                     <?php $path = "config.php"; include "$path"; $nameOfBlog = $config[0]; echo $nameOfBlog; ?><br>Copyright &copy; 2017

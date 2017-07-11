@@ -1,11 +1,12 @@
 <?php
-if(!isset($_COOKIE["jabs_password"])) {
+session_start();
+if(!isset($_SESSION["jabs_password"])) {
     $password = $_POST['password'];
 $path = "../config.php"; 
 include "$path"; 
 $rPassword = $config[1];
 if ($password == $rPassword){
-    SetCookie("jabs_password","$password",time()+3600);
+    $_SESSION["jabs_password"] = $password;
     require_once("../database.php");
     require_once("../models/articles.php");
         
@@ -52,7 +53,7 @@ if ($password == $rPassword){
     header("Location: ../admin.php");
 }
 } else {
-$password = $_COOKIE['jabs_password'];
+$password = $_SESSION["jabs_password"];
 $path = "../config.php"; 
 include "$path"; 
 $rPassword = $config[1];

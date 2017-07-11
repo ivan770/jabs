@@ -1,15 +1,16 @@
-# jabs
-Just Another Blogging System
 
-It's easy to use JABS! Installing:
+## What is JABS?
 
-1. Download the repo to your server.
 
-2. Change connection configuration in database.php to yours, and import blog.sql to your database
+JABS is a fast and easy to use CMS. With it you can make your own blog without any programming languages.
 
-3. Change config.php to yours (admin password, blog name)
 
-Thanks for reading!
+JABS includes pre-configured database, admin panel and pre-made CSS.
 
-Made by ivan770 with "geekbrains.ru"
+## Customizing JABS
+
+You can customize JABS in any way you want! Start from CSS or instantly begin from re-making the whole pages.
+## License
+
+MIT license is our main license. It is provided in LICENSE file.
 
